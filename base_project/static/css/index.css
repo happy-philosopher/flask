@@ -1,0 +1,21 @@
+body {
+   font-family: 'Noto Serif', serif;
+   line-height: 1;
+   color: #231E20;
+   background: #BBBBBB;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 40pt;
+    font-family: 'Arial', Courier, monospace;
+    color: black;
+}
+
+p {
+    font-size: 18pt;
+    color: #555555;
+}
