@@ -6,4 +6,4 @@ temp/
 **/__pycache__/
 test*.py
 test*.txt
-*.json
+

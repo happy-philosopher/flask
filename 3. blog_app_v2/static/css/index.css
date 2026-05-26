@@ -1,0 +1,194 @@
+/* Использование своих шрифтов */
+@font-face {
+  font-family: 'Roboto Regular';
+  src: url('../fonts/roboto-regular.woff2') format('woff2'), url('../fonts/roboto-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto Italic';
+  src: url('../fonts/roboto-italic.woff2') format('woff2'), url('../fonts/roboto-italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url('../fonts/roboto-bold.woff2') format('woff2'), url('../fonts/roboto-bold.woff') format('woff');
+}
+
+
+/* Дизайн всей области */
+body {
+   font-family: 'Roboto Regular';
+   color: #231E20;
+   background-image: url("../img/flask_back2.png");
+   background-repeat: repeat;
+}
+
+/* Разделение на области: верхняя часть, контент, нижняя часть */
+.header {
+    margin: 30px auto 15px auto;
+    padding: 0 50px 0 50px;
+    background-color: #a1aacd;
+    width: 70%;
+    box-shadow: 5px 7px 9px 2px #333;
+}
+
+.logo {
+    padding: 20px 0 20px 0;
+}
+
+.blog_name {
+    float: right;
+    margin: -65px 50px 0 0;
+    font-size: 33pt;
+    color: #ED131C;
+}
+
+.header img {
+    width: 353px;
+    height: 40px;
+}
+
+.content {
+    margin: 10px auto 0 auto;
+    padding: 0 50px 20px 50px;
+    background-color: #a1aacd;
+    width: 70%;
+    box-shadow: 5px 7px 9px 2px #333;
+}
+
+.footer {
+    margin: 15px auto;
+    padding: 20px 50px;
+    background-color: #a1aacd;
+    width: 70%;
+    box-shadow: 5px 7px 9px 2px #333;
+    text-align: center;
+}
+
+
+/* Основные элементы */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Bold';
+    line-height: 1.2;
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    font-size: 31pt;
+    width: 70%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+h2 {font-size: 28pt;}
+h3 {font-size: 25pt;}
+h4 {font-size: 22pt;}
+h5 {font-size: 19pt;}
+h6 {font-size: 16pt;}
+
+p {
+    margin: 18px 0 0 0;
+    font-size: 14pt;
+    color: #555;
+}
+
+b {
+    font-family: 'Roboto Bold';
+}
+
+ol {
+   padding-left: 40px;
+   margin: 10px 10px;
+}
+
+ul {
+    margin: 0 0;
+}
+
+li {
+    padding-left: 7px;
+}
+
+
+/* Таблицы */
+table {
+   border-collapse: collapse;
+   /*убираем пустые промежутки между ячейками*/
+   border: 1px solid grey;
+   /*устанавливаем для таблицы внешнюю границу серого цвета толщиной 1px*/
+   text-align: center;
+}
+
+th, td {
+   border: 1px solid grey;
+}
+
+td.line_header {
+    text-align: left;
+}
+
+/* Стилизация формы */
+form {
+  max-width: 420px; /* Ограничение формы по ширине */
+  margin: 0 auto; /* Выравнивание формы по центру */
+  padding: 20px; /* Внутренние отступы */
+  border: 1px solid #ccc; /* Обводка */
+  border-radius: 5px; /* Скругление */
+}
+
+input, textarea, button {
+  width: 100%; /* Ширина полей */
+  padding: 10px; /* Внутренние отступы */
+  margin: 0 0 10px; /* Отступы между полями */
+  border: 1px solid #ccc; /* Обводка */
+  border-radius: 5px; /* Скругление */
+}
+
+input {
+    width: 400px;
+}
+
+textarea {
+  height: 150px; /* Высота поля */
+  width: 400px; /* Ширина поля */
+  resize: none; /* Запрет на изменение ширины и высоты пользователем */
+}
+
+button {
+  background-color: #4cf50; /* Фоновый цвет */
+  cursor: pointer; /* Курсор в виде пальца */
+}
+
+button:hover {
+  opacity: 0.5; /* Прозрачность при наведении */
+}
+
+
+.note-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.note {
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.note-title {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+.note-content {
+    white-space: pre-line;
+    color: #555;
+    line-height: 1.4;
+}
+.empty-message {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+    padding: 40px;
+}

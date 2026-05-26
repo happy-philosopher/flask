@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}Дневник программиста{% endblock %}
+
+{% block content %}
+    <h1>Дневник программиста</h1>
+
+<form action="/submit" method="POST">
+    <label for="caption">Заголовок записи:</label>
+    <input type="text" id="caption" name="caption" required placeholder="Заголовок*"><br>
+
+    <label for="message">Запись:</label>
+    <textarea name="message" rows="5" cols="40" required placeholder="Ваше сообщение*"></textarea>
+
+    <button type="submit">Отправить</button>
+</form>
+
+<div class="note-container">
+    <h2>Мои заметки</h2>
+
+    {% if notes %}
+        {% for key, content in notes.items() %}
+            <div class="note">
+                <div class="note-title">{{ key }}</div>
+                <div class="note-content">{{ content }}</div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <div class="empty-message">Заметок пока нет. Добавьте первую!</div>
+    {% endif %}
+</div>
+{% endblock %}

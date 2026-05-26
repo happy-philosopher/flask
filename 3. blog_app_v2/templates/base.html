@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/index.css" />
+        <title>{% block title %}{% endblock %}</title>
+    {% endblock %}
+</head>
+<body>
+    <div class="header">
+        {% block header %}
+            <div class="logo">
+                <a href="https://lms.synergy.ru">
+                    <img src="../static/img/synergy-ru.png" alt="Логотип">
+                </a>
+            </div>
+            <div class="blog_name">
+                <b>{{ SITE_NAME }}</b>
+            </div>
+        {% endblock %}
+    </div>
+
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <div class="footer">
+        {% block footer %}
+            &copy; Copyright {{ CURRENT_YEAR }} by <a href="https://github.com/happy-philosopher">Happy Philosopher</a>
+        {% endblock %}
+    </div>
+</body>
+</html>
